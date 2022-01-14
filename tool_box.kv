@@ -1,0 +1,29 @@
+
+#:import toolbox toolbox
+<ToolButton>:
+	size_hint: None, None
+	size: 98, 98
+	group: 'tool'
+	canvas:
+		PushMatrix:
+		Translate:
+			xy: self.x, self.y
+	canvas.after:
+		PopMatrix:
+
+
+<ToolBox@GridLayout>:
+	cols: 2
+	padding: 4
+	ToolCircle:
+		canvas:
+			Line:
+				circle: 49, 49, 34
+	ToolCircle:
+		canvas:
+			Line:
+				points: 10, 10, 88, 88
+	ToolStickMan:
+		StickMan:
+
+

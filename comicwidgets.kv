@@ -1,0 +1,28 @@
+
+
+#:import comicwidgets comicwidgets
+<DraggableWidget>:
+	size_hint: None, None
+		
+<StickMan@RelativeLayout>:
+	size: 98, 98
+	canvas:
+		PushMatrix:
+		Line:
+			circle: 49, 78, 10
+		Line:
+			points: 49, 68, 49, 36
+		Line:
+			points: 28, 22, 49, 36
+		Line:
+			points: 70, 22, 49, 36
+		Translate:
+			y: 98-4
+		Rotate:
+			angle: 180
+			axis: 1, 0, 0
+		Line:
+			points: 28, 22, 49, 36
+		Line:
+			points: 70, 22, 49, 36
+		PopMatrix:
